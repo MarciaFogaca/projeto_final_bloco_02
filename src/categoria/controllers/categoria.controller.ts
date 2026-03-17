@@ -15,9 +15,9 @@ export class CategoriaController {
         return this.categoriaService.findById(id);
     }
 
-    @Get('/descricao/:descricao')
-    findByDescricao(@Param('descricao') descricao: string): Promise<Categoria[]> {
-        return this.categoriaService.findByDescricao(descricao);
+    @Get('/tipo/:tipo')
+    findByTipo(@Param('tipo') tipo: string): Promise<Categoria[]> {
+        return this.categoriaService.findByTipo(tipo);
     }
 
     @Post()
